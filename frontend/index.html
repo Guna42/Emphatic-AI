@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Empathica AI — Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+  <!-- Ambient background orbs -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <div class="orb orb-4" aria-hidden="true"></div>
+
+  <!-- FLOATING LOGO -->
+  <a href="/" class="brand" aria-label="Empathica AI">
+    <div class="brand-mark">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+        <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+        <line x1="9" y1="9" x2="9.01" y2="9"/>
+        <line x1="15" y1="9" x2="15.01" y2="9"/>
+      </svg>
+    </div>
+    <span class="brand-name">Empathica</span>
+  </a>
+
+  <!-- CAPSULE NAVBAR -->
+  <nav class="navbar" aria-label="Main navigation">
+      <a href="/" class="npill active" title="Home" aria-current="page">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </a>
+      <a href="/demo" class="npill" title="Live Demo">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="7 3 21 12 7 21 7 3"/>
+        </svg>
+      </a>
+      <a href="/compare" class="npill" title="Compare Models">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="18" rx="1"/><rect x="14" y="3" width="7" height="18" rx="1"/>
+        </svg>
+      </a>
+      <a href="/api-docs" class="npill" title="API Docs">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+        </svg>
+      </a>
+  </nav>
+
+  <div class="page" style="padding-bottom: 120px;">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Introduction" style="padding: 0 0 40px; text-align: center; display: flex; flex-direction: column; align-items: center; max-width: 1000px; margin: 0 auto;">
+      <h1 class="hero-title" style="font-size: 4.5rem; text-align: center; margin-bottom: 24px;">Empathica <span style="color: var(--claret);">AI</span></h1>
+      <p class="hero-sub" style="text-align: center; max-width: 700px; margin: 0 auto 40px; font-size: 1.25rem;">Transforming robotic support into genuine human connection. Our dual-model pipeline detects customer emotion and generates perfectly toned, empathetic responses in real-time.</p>
+      
+      <div class="cta-group" style="display: flex; gap: 16px; justify-content: center;">
+        <a href="#explore" class="btn-primary" style="background: var(--claret); color: white; border: none; padding: 14px 28px; border-radius: 30px; font-family: var(--f-display); font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(127,22,53,0.2);">
+          Explore the Project
+        </a>
+        <a href="/demo" class="btn-secondary" style="background: rgba(127,22,53,0.05); color: var(--claret-dk); border: 1px solid rgba(127,22,53,0.15); padding: 14px 28px; border-radius: 30px; font-family: var(--f-display); font-weight: 700; text-decoration: none; transition: background 0.2s;">
+          Try Live Demo &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- PIPELINE EXPLANATION -->
+    <section id="explore" style="margin-top: 80px; max-width: 1150px; margin-left: auto; margin-right: auto; padding: 60px; background: rgba(255,255,255,0.4); border: 1px solid rgba(255,255,255,0.8); border-radius: 40px; box-shadow: 0 20px 60px rgba(127,22,53,0.03);">
+      
+      <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: center;">
+        
+        <!-- Left Side: Sticky Text -->
+        <div style="text-align: left;">
+          <h2 style="font-family: var(--f-head); font-size: 3.2rem; color: var(--claret-dk); margin-bottom: 24px; line-height: 1.1;">The Empathy<br>Pipeline</h2>
+          <p style="font-family: var(--f-body); font-size: 1.15rem; color: var(--text-2); line-height: 1.7; margin-bottom: 0;">
+            How do we make an AI feel empathetic? Standard LLMs are cold and robotic. We split the task into two distinct neural networks, working together seamlessly to first understand the human, and then respond to them.
+          </p>
+        </div>
+
+        <!-- Right Side: Vertical Flow -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          
+          <!-- Step 1 -->
+          <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.1); border-radius: 24px; padding: 24px 32px; display: flex; align-items: flex-start; gap: 24px; box-shadow: 0 4px 20px rgba(127,22,53,0.02);">
+            <div style="width: 48px; height: 48px; flex-shrink: 0; background: rgba(127,22,53,0.06); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--claret);">
+              <span style="font-family: var(--f-head); font-weight: 800; font-size: 1.2rem;">1</span>
+            </div>
+            <div>
+              <h3 style="font-family: var(--f-head); font-size: 1.3rem; color: var(--claret-dk); margin-bottom: 8px;">Emotion Detection</h3>
+              <p style="font-family: var(--f-body); font-size: 1rem; color: var(--text-2); line-height: 1.6; margin: 0;">We use a fine-tuned DistilRoBERTa model to instantly analyze the customer's text and classify their underlying emotion (Anger, Joy, Fear, etc.).</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.1); border-radius: 24px; padding: 24px 32px; display: flex; align-items: flex-start; gap: 24px; box-shadow: 0 4px 20px rgba(127,22,53,0.02);">
+            <div style="width: 48px; height: 48px; flex-shrink: 0; background: rgba(127,22,53,0.06); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--claret);">
+              <span style="font-family: var(--f-head); font-weight: 800; font-size: 1.2rem;">2</span>
+            </div>
+            <div>
+              <h3 style="font-family: var(--f-head); font-size: 1.3rem; color: var(--claret-dk); margin-bottom: 8px;">Tone Conditioning</h3>
+              <p style="font-family: var(--f-body); font-size: 1rem; color: var(--text-2); line-height: 1.6; margin: 0;">The detected emotion is combined with your brand's preferred tone (Friendly, Formal, or Apologetic) to construct a highly specific contextual prompt.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.1); border-radius: 24px; padding: 24px 32px; display: flex; align-items: flex-start; gap: 24px; box-shadow: 0 4px 20px rgba(127,22,53,0.02);">
+            <div style="width: 48px; height: 48px; flex-shrink: 0; background: rgba(127,22,53,0.06); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--claret);">
+              <span style="font-family: var(--f-head); font-weight: 800; font-size: 1.2rem;">3</span>
+            </div>
+            <div>
+              <h3 style="font-family: var(--f-head); font-size: 1.3rem; color: var(--claret-dk); margin-bottom: 8px;">Generative Response</h3>
+              <p style="font-family: var(--f-body); font-size: 1rem; color: var(--text-2); line-height: 1.6; margin: 0;">Our LoRA fine-tuned Flan-T5 model generates the final response, synthesizing the customer's issue, their emotion, and your brand's tone perfectly.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE CAPSULES -->
+    <section style="margin-top: 80px; max-width: 1150px; margin-left: auto; margin-right: auto;">
+      <h2 style="font-family: var(--f-head); font-size: 2.8rem; color: var(--claret-dk); text-align: center; margin-bottom: 16px;">System Architecture</h2>
+      <p class="hero-sub" style="text-align: center; max-width: 700px; margin: 0 auto 60px; font-size: 1.15rem;">
+        By utilizing Parameter-Efficient Fine-Tuning (PEFT) with LoRA, we successfully adapted a lightweight foundation model to outperform models 10x its size on empathy-specific tasks.
+      </p>
+
+      <div style="width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: left;">
+        
+        <!-- Card 1 -->
+        <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 22px 32px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 4px 24px rgba(127,22,53,0.03);">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Base Model</span>
+          <span style="font-family: var(--f-body); font-weight: 600; color: var(--claret-dk); font-size: 1.15rem;">Flan-T5 (250M params)</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 22px 32px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 4px 24px rgba(127,22,53,0.03);">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">LoRA Architecture</span>
+          <span style="font-family: var(--f-body); font-weight: 600; color: var(--claret-dk); font-size: 1.15rem;">Rank: r=16 · α=32</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 22px 32px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 4px 24px rgba(127,22,53,0.03);">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Trainable Params</span>
+          <span style="font-family: var(--f-body); font-weight: 600; color: var(--claret-dk); font-size: 1.15rem;">1.76M / 249M (0.71%)</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 22px 32px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 4px 24px rgba(127,22,53,0.03);">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Training Dataset</span>
+          <span style="font-family: var(--f-body); font-weight: 600; color: var(--claret-dk); font-size: 1.15rem;">Bitext · 3,000 samples</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 22px 32px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 4px 24px rgba(127,22,53,0.03);">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Training Metrics</span>
+          <span style="font-family: var(--f-body); font-weight: 600; color: var(--claret-dk); font-size: 1.15rem;">Loss: 1.526 · Epochs: 3</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div style="background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 22px 32px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 4px 24px rgba(127,22,53,0.03);">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Evaluation (ROUGE)</span>
+          <span style="font-family: var(--f-body); font-weight: 600; color: var(--claret-dk); font-size: 1.15rem;">R-1: 0.4495 · R-L: 0.2991</span>
+        </div>
+
+        <!-- Card 7 (Full width) -->
+        <div style="grid-column: 1 / -1; background: var(--white); border: 1px solid rgba(127,22,53,0.12); border-radius: 40px; padding: 26px 36px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 4px 24px rgba(127,22,53,0.03); margin-top: 16px;">
+          <span style="font-family: var(--f-display); font-size: 0.75rem; color: #9f838b; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Detected Emotions Classification</span>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Anger</span>
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Sadness</span>
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Fear</span>
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Joy</span>
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Surprise</span>
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Disgust</span>
+            <span style="background: #fdf5f7; color: var(--claret-dk); padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; font-weight: 600; font-family: var(--f-body);">Neutral</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE MODULES -->
+    <section style="margin-top: 80px; max-width: 1150px; margin-left: auto; margin-right: auto; padding-top: 20px;">
+      <h2 style="font-family: var(--f-head); font-size: 2.8rem; color: var(--claret-dk); text-align: center; margin-bottom: 16px;">Explore the Project</h2>
+      <p class="hero-sub" style="text-align: center; max-width: 700px; margin: 0 auto 60px; font-size: 1.15rem;">
+        We have built three distinct interfaces to showcase, test, and integrate the Empathica AI models.
+      </p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        
+        <!-- Module 1 -->
+        <a href="/demo" style="text-decoration: none; display: block; background: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.9); border-radius: 32px; padding: 40px; text-align: left; box-shadow: 0 10px 40px rgba(127,22,53,0.05); transition: transform 0.2s; cursor: pointer;">
+          <h3 style="font-family: var(--f-head); font-size: 1.8rem; color: var(--claret-dk); margin-bottom: 16px;">Live Inference Engine</h3>
+          <p style="font-family: var(--f-body); font-size: 1.05rem; color: var(--text-2); line-height: 1.6; margin-bottom: 24px;">
+            Test the final fine-tuned model in a real-world scenario. Enter complaints, pick target tones, and generate empathetic replies instantly.
+          </p>
+          <span style="font-family: var(--f-display); font-weight: 700; color: var(--claret); letter-spacing: 0.5px; font-size: 0.9rem; text-transform: uppercase;">Launch Demo &rarr;</span>
+        </a>
+
+        <!-- Module 2 -->
+        <a href="/compare" style="text-decoration: none; display: block; background: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.9); border-radius: 32px; padding: 40px; text-align: left; box-shadow: 0 10px 40px rgba(127,22,53,0.05); transition: transform 0.2s; cursor: pointer;">
+          <h3 style="font-family: var(--f-head); font-size: 1.8rem; color: var(--claret-dk); margin-bottom: 16px;">Model Comparison</h3>
+          <p style="font-family: var(--f-body); font-size: 1.05rem; color: var(--text-2); line-height: 1.6; margin-bottom: 24px;">
+            Run the raw Base model head-to-head against the Fine-tuned model to see the dramatic difference in quality and tone alignment.
+          </p>
+          <span style="font-family: var(--f-display); font-weight: 700; color: var(--claret); letter-spacing: 0.5px; font-size: 0.9rem; text-transform: uppercase;">Compare Models &rarr;</span>
+        </a>
+
+        <!-- Module 3 -->
+        <a href="/api-docs" style="grid-column: 1 / -1; text-decoration: none; display: flex; align-items: center; justify-content: space-between; background: rgba(127,22,53,0.03); border: 1px solid rgba(127,22,53,0.1); border-radius: 32px; padding: 40px 60px; text-align: left; transition: transform 0.2s; cursor: pointer;">
+          <div style="max-width: 600px;">
+            <h3 style="font-family: var(--f-head); font-size: 1.8rem; color: var(--claret-dk); margin-bottom: 16px;">REST API Reference</h3>
+            <p style="font-family: var(--f-body); font-size: 1.05rem; color: var(--text-2); line-height: 1.6;">
+              Integrate the models directly into your own app. Review the FastAPI backend documentation, endpoint schemas, and code examples.
+            </p>
+          </div>
+          <span style="font-family: var(--f-display); font-weight: 700; color: var(--claret); letter-spacing: 0.5px; font-size: 0.9rem; text-transform: uppercase; white-space: nowrap;">View Docs &rarr;</span>
+        </a>
+
+      </div>
+    </section>
+
+  </div><!-- /page -->
+
+  <style>
+    /* Hover effects for the module cards */
+    a[href]:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 50px rgba(127,22,53,0.1) !important;
+    }
+  </style>
+</body>
+</html>
