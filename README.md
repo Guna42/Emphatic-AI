@@ -1,28 +1,28 @@
 <div align="center">
 
 <br/>
+<br/>
 
-```
-███████╗███╗   ███╗██████╗  █████╗ ████████╗██╗  ██╗██╗ ██████╗ █████╗ 
-██╔════╝████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝██║  ██║██║██╔════╝██╔══██╗
-█████╗  ██╔████╔██║██████╔╝███████║   ██║   ███████║██║██║     ███████║
-██╔══╝  ██║╚██╔╝██║██╔═══╝ ██╔══██║   ██║   ██╔══██║██║██║     ██╔══██║
-███████╗██║ ╚═╝ ██║██║     ██║  ██║   ██║   ██║  ██║██║╚██████╗██║  ██║
-╚══════╝╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝
-                                                          AI
-```
+<img src="assets/land1.png" width="100%" />
 
-### *An AI that doesn't just respond — it understands.*
+<br/>
+<br/>
+
+# Empathica AI
+
+*In a world of automated replies and hollow scripts,*
+*Empathica was built to do one thing differently —*
+***feel.***
 
 <br/>
 
-[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red?style=for-the-badge)](https://github.com/Guna42/Emphatic-AI)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Flan-T5](https://img.shields.io/badge/Model-Flan--T5-FF6F00?style=for-the-badge&logo=google&logoColor=white)](https://huggingface.co/google/flan-t5-base)
-[![LoRA](https://img.shields.io/badge/Fine--Tuned-LoRA%20%2F%20PEFT-8A2BE2?style=for-the-badge)](https://github.com/huggingface/peft)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Docker](https://img.shields.io/badge/Deployed-Docker%20%2B%20Render-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://render.com)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python_3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Flan-T5](https://img.shields.io/badge/Flan--T5_Base-FF6F00?style=flat-square&logo=google&logoColor=white)](https://huggingface.co/google/flan-t5-base)
+[![LoRA · PEFT](https://img.shields.io/badge/LoRA_%2F_PEFT-7C3AED?style=flat-square)](https://github.com/huggingface/peft)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com)
+[![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)](https://render.com)
+[![License](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](LICENSE)
 
 <br/>
 
@@ -30,149 +30,162 @@
 
 <br/>
 
+</div>
+
 ---
 
+## The Idea
+
+Customer support is broken. Not because the people are wrong — but because the *language* is.
+
+Copy-pasted templates. Robotic acknowledgements. Responses that technically answer the question but make you feel completely unseen.
+
+**Empathica AI** is the antidote.
+
+It reads what a customer writes, *understands how they feel*, and crafts a response that is warm, brand-aligned, and genuinely human — in real-time, at scale.
+
+Under the hood: a dual-model pipeline. First, a fine-tuned **DistilRoBERTa** reads the emotion. Then, a **LoRA-adapted Flan-T5** writes the reply — shaped by both the feeling and your brand's chosen tone.
+
+The result? Words that land.
+
+<br/>
+
+---
+
+## The Pipeline
+
+<div align="center">
+<img src="assets/land2.png" width="100%" />
 </div>
 
 <br/>
 
-## 🫀 What is Empathica AI?
+Three steps. Invisible to the user. Everything to the output.
 
-**Empathica AI** is a fine-tuned language model built to do what most AI systems fail at — *actually understand how you feel.*
+**① Emotion Detection** — DistilRoBERTa classifies the customer's underlying feeling: Anger, Sadness, Fear, Joy, Disgust, Surprise, or Neutral. Not a guess. A confidence score.
 
-Built on Google's `Flan-T5` architecture and supercharged with **LoRA (Low-Rank Adaptation)** fine-tuning, Empathica generates responses that are warm, emotionally aware, and genuinely supportive. Not robotic. Not cold. *Human.*
+**② Tone Conditioning** — The detected emotion is fused with your preferred brand voice — Friendly, Formal, or Apologetic — to construct a context-rich, empathy-aware prompt.
 
-It also ships with a **side-by-side comparison mode** — so you can see exactly how fine-tuning transforms a generic base model into something that *feels* different.
+**③ Generative Response** — The LoRA fine-tuned Flan-T5 generates the final reply. Not retrieved. Not templated. *Written.*
 
 <br/>
 
 ---
 
-## ✨ Features
+## Live Inference
 
-| Feature | Description |
+<div align="center">
+<img src="assets/model.png" width="100%" />
+<br/><br/>
+<img src="assets/model-output.png" width="100%" />
+</div>
+
+<br/>
+
+Type a complaint. Pick a tone. Watch Empathica detect the emotion, build the context, and write a response that sounds like a human who actually cares.
+
+> *"My order was misplaced and it's been 3 weeks. There is no response regarding it. What kind of service is this?"*
+>
+> Detected: **Disgust · Apologetic tone · 95.6% confidence**
+>
+> Response: *"Thank you for contacting us. I understand your frustration and we are committed to making this right for you immediately..."*
+
+<br/>
+
+---
+
+## Comparison Mode
+
+<div align="center">
+<img src="assets/compare.png" width="100%" />
+</div>
+
+<br/>
+
+See **Base Flan-T5 vs Empathica AI** side by side. The difference isn't subtle.
+
+| Input | Base Flan-T5 | Empathica AI |
+|---|---|---|
+| *"I failed my exam and feel terrible"* | `"Sorry to hear that."` | `"That must feel really discouraging. Failing an exam doesn't define your worth — it's one moment, not your whole story."` |
+| *"I'm so stressed about everything"* | `"Try to relax."` | `"Stress like that can feel suffocating. You don't have to figure it all out at once. What's weighing on you most right now?"` |
+
+> Fine-tuning *matters.*
+
+<br/>
+
+---
+
+## System Architecture
+
+<div align="center">
+<img src="assets/land3.png" width="100%" />
+</div>
+
+<br/>
+
+Built with Parameter-Efficient Fine-Tuning — meaning we didn't retrain a massive model from scratch. We adapted it. Surgically.
+
+By touching less than **0.71%** of the model's weights, Empathica outperforms models ten times its size on empathy-specific tasks. That's not just efficiency — that's elegance.
+
+| | |
 |---|---|
-| 🧠 **Fine-Tuned Intelligence** | LoRA-adapted Flan-T5 trained on empathetic conversation data |
-| ⚡ **Lightning Fast API** | FastAPI backend with low-latency model inference |
-| 🔬 **Comparison Mode** | Live side-by-side: base model vs Empathica — spot the difference |
-| 🌐 **Clean Web UI** | Minimal, beautiful frontend — no frameworks, just vibes |
-| 📦 **Parameter-Efficient** | Only adapter weights stored — not the full model. Smart & lean |
-| 🐳 **Docker-Ready** | One command to containerize and ship anywhere |
-| ☁️ **Render Deployable** | `render.yaml` included — push and it's live |
-| 📄 **Built-in Docs Page** | `docs.html` explains the project right in the browser |
+| **Base Model** | Flan-T5 · 250M parameters |
+| **LoRA Rank / Alpha** | r=16 · α=32 |
+| **Trainable Parameters** | 1.76M of 249M — 0.71% |
+| **Training Data** | Bitext · 3,000 samples |
+| **Training Loss** | 1.526 over 3 epochs |
+| **ROUGE-1 / ROUGE-L** | 0.4495 · 0.2991 |
+| **Emotion Classes** | Anger · Sadness · Fear · Joy · Surprise · Disgust · Neutral |
 
-<br/>
-
----
-
-## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        EMPATHICA AI                             │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   👤 User                                                       │
-│      │                                                          │
-│      ▼                                                          │
-│  ┌──────────────────────────────────────┐                       │
-│  │         FRONTEND  (HTML/CSS/JS)      │                       │
-│  │  index.html   →   script.js          │                       │
-│  │  compare.html →   compare.js         │                       │
-│  │  demo.html    →   docs.html          │                       │
-│  └─────────────────┬────────────────────┘                       │
-│                    │  HTTP POST /generate                        │
-│                    ▼                                            │
-│  ┌──────────────────────────────────────┐                       │
-│  │       BACKEND  (Python / FastAPI)    │                       │
-│  │           backend/main.py            │                       │
-│  │  • CORS handling                     │                       │
-│  │  • Request parsing                   │                       │
-│  │  • Prompt engineering                │                       │
-│  │  • Model inference                   │                       │
-│  └─────────────────┬────────────────────┘                       │
-│                    │                                            │
-│                    ▼                                            │
-│  ┌──────────────────────────────────────┐                       │
-│  │       MODEL  (Flan-T5 + LoRA)        │                       │
-│  │  google/flan-t5-base  (base)         │                       │
-│  │  + adapter_model.safetensors         │                       │
-│  │  + adapter_config.json               │                       │
-│  │  + tokenizer.json                    │                       │
-│  └──────────────────────────────────────┘                       │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-<br/>
-
----
-
-## 📁 Project Structure
-
-```
-Emphatic-AI/
-│
-├── 📂 frontend/                  # Static web UI
-│   ├── index.html                # Main landing + chat page
-│   ├── demo.html                 # Live demo page
-│   ├── compare.html              # Base vs Fine-tuned comparison
-│   ├── docs.html                 # In-browser documentation
-│   ├── style.css                 # All styles (responsive + themed)
-│   ├── script.js                 # Core frontend logic & API calls
-│   └── compare.js                # Dual-model comparison logic
-│
-├── 📂 backend/
-│   └── main.py                   # FastAPI app — model loading & endpoints
-│
-├── 📂 model/                     # Fine-tuned LoRA adapter (NOT full model)
-│   ├── adapter_config.json       # LoRA rank, alpha, target modules
-│   ├── adapter_model.safetensors # Fine-tuned adapter weights
-│   ├── tokenizer.json            # Tokenizer vocabulary
-│   ├── tokenizer_config.json     # Tokenizer settings
-│   └── README.md                 # Model card
-│
-├── 📂 assets/                    # Screenshots and demo images
-│
-├── 🐳 Dockerfile                 # Container definition
-├── ☁️  render.yaml               # Render deployment config
-├── 📦 requirements.txt           # Python dependencies
-├── 🪟 START_EMPATHICA.bat        # One-click Windows launcher
-└── 📖 viva_preparation_guide.md  # Project explanation notes
-```
-
-<br/>
-
----
-
-## 🧬 The AI Behind It
-
-### Why Flan-T5?
-Google's `flan-t5-base` is an instruction-tuned transformer that's compact, fast, and strong at following natural language instructions — making it ideal for empathetic response generation without needing massive compute.
-
-### Why LoRA / PEFT?
-**Low-Rank Adaptation** means we don't retrain the entire model (billions of parameters). Instead, we inject small trainable matrices into the base model — making fine-tuning:
-- 🚀 Faster to train
-- 💾 Cheaper to store (just the adapter, not the whole model)
-- 🎯 Highly targeted to empathetic responses
+**The math behind LoRA:**
 
 ```
 Base Model (frozen)  +  LoRA Adapter (fine-tuned)  =  Empathica AI ✨
 ```
 
-### Inference Flow
+Instead of retraining 249M parameters, we inject small trainable rank decomposition matrices — making fine-tuning faster, cheaper to store, and laser-targeted to empathetic responses.
+
+<br/>
+
+---
+
+## REST API
+
+<div align="center">
+<img src="assets/api.png" width="100%" />
+</div>
+
+<br/>
+
+FastAPI backend. Sub-second inference. Clean and documented.
+
+**`GET /health`**
+```json
+{
+  "status": "running",
+  "device": "cpu",
+  "model": "Empathica AI v1.0"
+}
 ```
-User Input  ──▶  Prompt Engineering  ──▶  Tokenizer  ──▶  Flan-T5 + LoRA
-                                                                  │
-                                                                  ▼
-User sees warm, empathetic reply  ◀──  Detokenize  ◀──  model.generate()
+
+**`POST /generate`**
+```json
+// Request
+{
+  "text": "I've been waiting 3 weeks and no one has responded to me."
+}
+
+// Response
+{
+  "reply": "I'm truly sorry for the experience you've had. Three weeks without a response is unacceptable, and I want to make this right for you immediately."
+}
 ```
 
 <br/>
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.10+
@@ -181,174 +194,122 @@ User sees warm, empathetic reply  ◀──  Detokenize  ◀──  model.genera
 
 ---
 
-### 🖥️ Local Setup
+### Local Setup
 
-**1. Clone the repo**
 ```bash
+# 1. Clone
 git clone https://github.com/Guna42/Emphatic-AI.git
 cd Emphatic-AI
-```
 
-**2. Install dependencies**
-```bash
+# 2. Install
 pip install -r requirements.txt
+
+# 3. Run the backend
+cd backend && uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-**3. Start the backend**
-```bash
-cd backend
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-**4. Open the frontend**
-
-Just open `frontend/index.html` in your browser (or use VS Code Live Server).
-
-> ✅ That's it. Talk to Empathica.
+Then open `frontend/index.html` in your browser. That's it.
 
 ---
 
-### 🪟 Windows One-Click
+### Windows — One Click
 
 ```bash
-# Just double-click:
+# Double-click:
 START_EMPATHICA.bat
 ```
 
 ---
 
-### 🐳 Docker
+### Docker
 
 ```bash
-# Build the image
 docker build -t empathica-ai .
-
-# Run the container
 docker run -p 8000:8000 empathica-ai
 ```
 
 ---
 
-### ☁️ Deploy on Render
+### Deploy on Render
 
 1. Fork this repo
-2. Connect it to [Render](https://render.com)
-3. Render reads `render.yaml` automatically
+2. Connect to [Render](https://render.com)
+3. `render.yaml` handles the config automatically
 4. Hit **Deploy** — your backend is live 🌍
 
 <br/>
 
 ---
 
-## 🔌 API Reference
+## Project Structure
 
-### `POST /generate`
-
-Generate an empathetic response.
-
-**Request:**
-```json
-{
-  "text": "I've been feeling really overwhelmed lately and don't know what to do."
-}
 ```
-
-**Response:**
-```json
-{
-  "reply": "I'm really sorry you're feeling this way. It's completely okay to feel overwhelmed sometimes — it means you care deeply. Let's take it one step at a time together."
-}
-```
-
----
-
-### `GET /health`
-
-```json
-{ "status": "Empathica AI is running 💚" }
+Emphatic-AI/
+├── frontend/
+│   ├── index.html          — Landing page & hero
+│   ├── demo.html           — Live inference engine
+│   ├── compare.html        — Base vs fine-tuned comparison
+│   ├── docs.html           — In-browser documentation
+│   ├── style.css           — All styles, one file
+│   ├── script.js           — Core interactions & API calls
+│   └── compare.js          — Dual-model comparison logic
+│
+├── backend/
+│   └── main.py             — FastAPI app, model loading, endpoints
+│
+├── model/
+│   ├── adapter_config.json         — LoRA rank, alpha, target modules
+│   ├── adapter_model.safetensors   — Fine-tuned weights (not the full model)
+│   ├── tokenizer.json              — Vocabulary
+│   └── tokenizer_config.json       — Tokenizer settings
+│
+├── assets/                 — Screenshots of application
+├── Dockerfile
+├── render.yaml
+└── requirements.txt
 ```
 
 <br/>
 
 ---
 
-## 🔬 Comparison Mode
-
-One of Empathica's coolest features — open `compare.html` to see **Base Flan-T5 vs Empathica AI** side by side.
-
-| Input | Base Flan-T5 | Empathica AI |
-|---|---|---|
-| *"I failed my exam and feel terrible"* | `"Sorry to hear that."` | `"That must feel really discouraging. Failing an exam doesn't define your worth — it's one moment, not your whole story. What can I help you with?"` |
-| *"I'm so stressed about everything"* | `"Try to relax."` | `"Stress like that can feel suffocating. You don't have to figure it all out at once. What's weighing on you most right now?"` |
-
-> The difference is real. Fine-tuning *matters.*
-
-<br/>
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
-| **Language Model** | `google/flan-t5-base` |
-| **Fine-tuning** | LoRA via 🤗 PEFT |
-| **Backend** | Python + FastAPI + Uvicorn |
-| **Frontend** | Vanilla HTML / CSS / JavaScript |
-| **Containerization** | Docker |
-| **Cloud Deployment** | Render |
-| **Model Format** | SafeTensors (`.safetensors`) |
+| Emotion Classifier | DistilRoBERTa · fine-tuned |
+| Response Generator | Flan-T5 Base + LoRA adapter |
+| Fine-tuning Framework | 🤗 PEFT |
+| Backend | Python · FastAPI · Uvicorn |
+| Frontend | HTML · CSS · Vanilla JavaScript |
+| Deployment | Docker · Render |
+| Model Format | SafeTensors |
 
 <br/>
 
 ---
 
-## 🖼️ Screenshots
+## What's Next
 
-> *(See the `assets/` folder for full screenshots)*
-
-| Page | Preview |
-|---|---|
-| 🏠 Landing | `assets/land1.png` |
-| 💬 Chat Demo | `assets/land2.png` |
-| 🔬 Comparison | `assets/compare.png` |
-| 🔌 API Docs | `assets/api.png` |
-| 🧠 Model Output | `assets/model-output.png` |
+- 🎙️ Voice input — speak your frustration, hear empathy back
+- 💾 Session memory — carry the conversation, not just the message
+- 🌍 Multi-language support — empathy has no borders
+- 📊 Live analytics dashboard — emotion trends, confidence scoring
+- 📱 PWA / Mobile app version
+- 🧪 ROUGE / BERTScore evaluation metrics page
 
 <br/>
 
 ---
 
-## 🔮 Future Roadmap
+## Contributing
 
-- [ ] 🎙️ Voice input support
-- [ ] 💾 Session memory / conversation history
-- [ ] 📊 Sentiment analysis dashboard
-- [ ] 🌍 Multi-language empathetic responses
-- [ ] 🔐 User authentication & personal profiles
-- [ ] 📱 PWA / Mobile app version
-- [ ] 🧪 ROUGE / BERTScore evaluation metrics page
-
-<br/>
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you want to improve Empathica:
+Contributions are welcome!
 
 1. Fork the repo
-2. Create a branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add: your feature'`)
+2. Create a branch — `git checkout -b feature/your-feature`
+3. Commit — `git commit -m 'Add: your feature'`
 4. Push and open a Pull Request
-
-<br/>
-
----
-
-## 📜 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
 
 <br/>
 
@@ -356,16 +317,25 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 <div align="center">
 
-**Built with 🧠 intelligence and ❤️ empathy**
+<br/>
 
-*by [Guna42](https://github.com/Guna42)*
+*Most AI talks at you.*
+
+*Empathica listens first.*
+
+<br/>
+<br/>
+
+**Built with 🧠 intelligence and ❤️ empathy by [Guna42](https://github.com/Guna42)**
 
 <br/>
 
-```
-If this project made you feel something — it's working.
-```
+*If reading this made you feel something — it's already working.*
+
+<br/>
 
 ⭐ **Star this repo if Empathica made you smile** ⭐
+
+<br/>
 
 </div>
