@@ -1,0 +1,22 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv/
+.git/
+.gitignore
+.vscode/
+
+# Ignore large zip files and build artifacts
+*.zip
+*.tar.gz
+*.rar
+
+# If you don't want to copy the local models and want them downloaded at runtime, 
+# you could ignore the model/ folder. However, since it is a local fine-tuned LoRA model, 
+# it MUST be copied into the container.
+# !model/ 

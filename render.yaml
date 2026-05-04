@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: empathica-ai
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+      - key: PORT
+        value: 10000
